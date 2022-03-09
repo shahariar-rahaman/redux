@@ -1,0 +1,16 @@
+.text-Area {
+    width: 200px;
+    height: 200px;
+    background: rgb(233, 182, 216);
+    border: 1px solid black;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
