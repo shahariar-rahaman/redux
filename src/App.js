@@ -7,7 +7,8 @@ function App() {
   const dispatch = useDispatch();
   const data = useSelector((items) => items.reduce);
   let handleSubmit = () => {
-    dispatch({ type: "SUBMIT", payload: input });
+    dispatch({ type: "SUBMIT", payload: input});
+    newInput("")
   };
   let handleChange = (event) => {
     newInput(event.target.value);
@@ -16,7 +17,7 @@ function App() {
   return (
     <div className="App beside">
       <div>
-        <input onChange={handleChange} type="text" />
+        <input onChange={handleChange} type="text" value={input}/>
         <button onClick={handleSubmit}>Submit</button>
       </div>
       <div className="text-Area App"> <h1>{data}</h1> </div>
